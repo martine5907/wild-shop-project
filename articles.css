@@ -1,0 +1,368 @@
+  /*-------ROMAIN-------*/
+  /*--------GRID--------*/
+
+  a{
+    text-decoration: none;
+    color:black;
+  }
+  .container_grid {
+    aspect-ratio: 12/ 9;
+    /*background-color: #f3f3f3; */
+    margin-right: 12%;
+    margin-left: 12%;
+    margin-top: 3vh;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "Category Big_Product Big_Product Product_1 Product_2"
+      "Category Big_Product Big_Product Product_3 Product_4"
+      "Category Product_5 Product_6 Product_7 Product_8"
+      "Category Product_9 Product_10 Product_11 Product_12"; 
+  }
+  
+  /* Category*/
+  
+  .Category { 
+    grid-area: Category; 
+    /* background-color: #f3f3f3; */
+    /* border-right: 0.2rem solid rgba(247, 108, 108, 0.473); */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 100%;
+    height: 100%;
+  }
+  #category-grid {
+    display: none;
+  }
+
+  button {
+    background-size: cover;
+    height: 13%;
+    width: 50%;
+    margin: 3%;
+    border-radius: 50%;
+    background-color: rgb(247, 108, 108, 0.473);
+    border-color: white;
+    /*box-shadow: -1px 1px 10px 0px black;*/
+    /*rgba(247, 108, 108, 0.473)*/
+  }
+
+  #Vetements{
+    background-image: url("pictures/pictos/categories/clothes-white.png");
+  }
+
+  #Vetements:hover {
+    background-image: url("pictures/pictos/categories/clothes-black.png");
+    border-color: black;
+  }
+
+  #Goodies{
+    background-image: url("pictures/pictos/categories/goodies-white.png");
+  }
+
+  #Goodies:hover {
+    background-image: url("pictures/pictos/categories/goodies-black.png");
+    border-color: black;
+  }
+
+  #Tout{
+    background-image: url("pictures/pictos/categories/tout-white.png");
+  }
+
+  #Tout:hover {
+    background-image: url("pictures/pictos/categories/tout-black.png");
+    border-color: black;
+  }
+
+  
+  /*Article principal*/
+  
+  .Big_Product { 
+    aspect-ratio: none;
+    grid-area: Big_Product; 
+    background-image: url(pictures/products/sweat-born-to-be-a-wildeuse-1.png);
+    background-size: cover;
+    border-radius: 2vw;
+    /*display: flex;
+    align-items: flex-end;
+    box-shadow: -4px 4px 19px 0px #000000;*/
+    position: relative;
+    overflow: hidden;
+    justify-items: stretch;
+    aspect-ratio: 20/ 20;
+    }
+  
+  .Big_Product::before {
+    content: "29,90€";
+    display: flex;
+    justify-content: "";
+    font-size: 3rem;
+    position: absolute;
+    height: 15vh;
+    width: 33vw;
+    background-color: rgba(247, 108, 108, 0.473);
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: 0.5s;
+  }
+  
+  .Big_Product:hover::before {
+    transform: translateY(calc(240% - 15rem));
+  }
+  
+  /*Sous artciles*/
+  
+  .Product_1 { 
+    grid-area: Product_1; 
+    background-image: url(pictures/products/bag-born-to-be-a-wilder-1.png);
+    aspect-ratio: 1/ 1;
+    }
+  .Product_2 {
+    grid-area: Product_2;
+    background-image: url(pictures/products/tshirt-data-1.png);
+    aspect-ratio: 1/ 1;
+    }
+  
+  .Product_3 {
+    grid-area: Product_3;
+    background-image: url(pictures/products/mug-dev-1.png);
+    aspect-ratio: 1/ 1;
+    }
+  .Product_4 {
+    grid-area: Product_4;
+    background-image: url(pictures/products/tshirt-loic-1.png);
+    aspect-ratio: 1/ 1;
+    }
+  .Product_5 {
+    grid-area: Product_5; 
+    background-image: url(pictures/products/tshirt-dev-1.png);
+    aspect-ratio: 1/ 1;
+    }
+  .Product_6 {
+    grid-area: Product_6; 
+    background-image: url(pictures/products/bag-dev-1.png);
+    aspect-ratio: 1/ 1;
+    }
+  .Product_7 {
+    grid-area: Product_7; 
+    background-image: url(pictures/products/tshirt-cyber-security-1.png);
+    aspect-ratio: 1/ 1;
+    }
+  .Product_8 {
+    grid-area: Product_8;
+    background-image: url(pictures/products/mug-no-code-1.png);
+    aspect-ratio: 1/ 1;
+    }
+  .Product_9 {
+    grid-area: Product_9;
+    background-image: url(pictures/products/bag-loic-1.png);
+    aspect-ratio: 1/ 1;
+    }
+  .Product_10 {
+    grid-area: Product_10;
+    background-image: url(pictures/products/sweat-born-to-be-a-wilder-1.png);
+    aspect-ratio: 1/ 1;
+    }
+  .Product_11 {
+    grid-area: Product_11;
+    background-image: url(pictures/products/mug-loic-1.png);
+    aspect-ratio: 1/ 1;
+    }
+  .Product_12 {
+    grid-area: Product_12;
+    background-image: url(pictures/products/bag-cyber-security-1.png);
+    aspect-ratio: 1/ 1;
+    }
+
+  .product {
+    background-size: cover;
+    justify-content: stretch;
+    justify-self: center;
+    margin: 1vh;
+    border-radius: 1rem; 
+    max-height: 100%;
+    max-width: 100%;
+    /*box-shadow: -2px 2px 19px 0px #000000;*/
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+  }
+
+  .bandeau {
+    display: none;
+  }
+
+  .Product_11 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+    border: rgb(22, 201, 76) solid 3px;
+  }
+
+  .offrelimite {
+    background-color: rgb(22, 201, 76);
+    transform: rotate(30deg);
+    position: absolute;
+    font-size: 50%;
+    top: 11%;
+    right: -9%;
+    height: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    }
+  
+  /* Config sous menues*/
+  
+  .Product_1::before, .Product_2::before, .Product_3::before, .Product_4::before,
+  .Product_5::before, .Product_6::before, .Product_7::before, .Product_8::before,
+  .Product_9::before, .Product_10::before, .Product_11::before, .Product_12::before{
+    position: absolute;
+    height: 7vh;
+    width: 14vw;
+    background-color: rgba(247, 108, 108, 0.473);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: 0.5s;
+  }
+
+  .Product_11::before {
+    background-color: rgb(22, 201, 76, 0.473);
+  }
+
+  .Product_1::before { content: "11,90€";}
+  .Product_2::before { content: "14,90€";}
+  .Product_3::before { content: "12,90€";}
+  .Product_4::before { content: "79,90€";}
+  .Product_5::before { content: "14,90€";}
+  .Product_6::before { content: "11,90€";}
+  .Product_7::before { content: "14,90€";}
+  .Product_8::before { content: "12,90€";}
+  .Product_9::before { content: "98,90€";}
+  .Product_10::before { content: "29,90€";}
+  .Product_11::before { content: "59,90€";}
+  .Product_12::before { content: "12,90€";}
+
+
+  
+  .Product_1:hover::before, .Product_2:hover::before, .Product_3:hover::before, .Product_4:hover::before,
+  .Product_5:hover::before, .Product_6:hover::before, .Product_7:hover::before, .Product_8:hover::before,
+  .Product_9:hover::before, .Product_10:hover::before, .Product_11:hover::before, .Product_12:hover::before{
+    transform: translateY(calc(230% - 7rem));
+  }
+  
+  /* -----------RESPONSIVE------------ */
+  /* -----------RESPONSIVE------------ */
+  /* -----------RESPONSIVE------------ */
+  
+  @media screen and (max-width: 810px) {
+    .Category {
+      height: 70%;
+      flex-direction: row;
+      align-self: center;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+    }
+    #category-grid {
+      padding: 0;
+      margin-top: -10%;
+      display: flex;
+      justify-content: center;
+      font-size: 90%;
+    }
+    button {
+      height: 70%;
+      width: 35%;
+      border-radius: 50%;
+      border: none;
+      padding: 0;
+    }
+    .Big_Product {
+      display: none;
+    }
+    .container_grid { 
+      aspect-ratio: 1/ 4;
+      margin-top: -6vh;
+      grid-template-columns: repeat(2fr, 4fr);
+      margin-left: 0;
+      margin-right: 0;
+      grid-template-columns: 1fr 1fr; 
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "Category Category"
+        "Product_1 Product_2"
+        "Product_3 Product_4"
+        "Product_5 Product_6"
+        "Product_7 Product_8"
+        "Product_9 Product_10"
+        "Product_11 Product_12"; 
+    }
+    .product {
+      margin: 0;
+      max-height: 100%;
+      max-width: 100%;
+      margin-top: 0rem;
+      border-radius: 0;
+      border :1vw solid rgb(238, 235, 235);/* probleme du décalage à droite ICI*/
+      box-sizing: none;
+      margin: 0;
+      aspect-ratio: 13/14;
+    }
+
+    /*#price {
+      max-height: 10%;
+      max-width: 10%;
+      display: flex;
+      justify-content: start;
+      margin: 0;
+     }*/
+
+    .Product_1::before, .Product_2::before, .Product_3::before, .Product_4::before,
+    .Product_5::before, .Product_6::before, .Product_7::before, .Product_8::before {
+      content: "";
+      position: none;
+      height: 0;
+      width: 0;
+      background-color: none;
+      border-bottom-right-radius: none;
+      border-bottom-left-radius: none;
+      bottom: 0;
+      left: 0;
+      transform: none;
+      transition: none;
+   }
+    .Product_11{
+      align-items: flex-end;
+      justify-content: start;
+    }
+
+    .bandeau {
+      background-color: #f76c6c;
+      height: 7vh;
+      width: 14vw;
+      border-top-right-radius: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 52%;
+    }
+    .offrelimite {
+      display: none;
+    }
+  }

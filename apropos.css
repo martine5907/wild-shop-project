@@ -1,0 +1,12 @@
+.pitch{
+    width: 66vw;
+    margin: auto;
+    margin-top: 200px;
+}
+
+@media screen and (max-width: 800px){
+    .pitch{
+        width:80vw;
+    }
+    
+}

@@ -1,0 +1,11 @@
+
+.explanation {
+    width: 66vw;
+    margin: auto;
+    margin-top: 200px;
+}
+@media screen and (max-width:800px){
+    .explanation{
+        width: 80vw;
+    }
+}

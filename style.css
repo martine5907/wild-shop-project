@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #f76c6c;
+  --light-color: rgb(238, 235, 235);
+  --dark-color: rgb(82, 82, 82);
+  --opacity-color: rgba(247, 108, 108, 0.5);
+}
+
+body {
+  margin: 0;
+  font-family: Lato;
+  font-size: 1.5rem;
+  background-color: var(--light-color);
+}
+
+.cgv, .cgu, .mentionslegales{
+  width: 66%;
+  margin: auto;
+  background-color: var(--light-color);
+}
+
+.cgv p, .cgu p,.mentionslegales p {
+  font-size: 0.8em;
+}

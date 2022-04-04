@@ -1,0 +1,240 @@
+/* PRESENTATION */
+
+  .welcome {
+    /* border : solid 1px; */
+
+    /* position: relative; */
+    /* top:80px; */
+    width: 100%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .favorite{
+    text-align: center;
+    order : 1;
+    width: 100vw;  
+    height: 65vw;
+    background-color: white;      
+  }
+
+.favorite p,.favorite h3, .favorite h2 {
+  margin : 20px;
+}
+  .favorite h3{
+    color : var(--primary-color);
+  }
+  
+  .favorite p{
+    /* background-color: var(--light-color);
+    background-size: 100vw; */
+    width: 100% ;
+    font-size: 20px;
+    padding-right : 20%;
+  }
+  
+  .button{
+    /* border : solid 1px; */
+    margin-left: 32px;
+    margin-top: 15px;
+    padding : 3px 5px 5px 10px;
+    width: 180px ;
+    height: 3rem ;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: var(--primary-color);
+  }
+  .button p{
+    width: 58%;
+    text-align: center;  
+    margin: 0;
+    padding: 0;
+    font-size: 20px;  
+  }
+  .button p:hover {
+    color: white;
+}
+    .coeur{
+        background-image: url(pictures/pictos/coeur.png);
+        padding: 3% 3% 3% 3%;
+        width: 3rem ;
+        height: 3rem ;
+        background-size: 2rem;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .coeur:hover {
+        background-image: url(pictures/pictos/coeur-blanc.png);
+    }
+    .button:hover {
+      background-color: black;
+      color: var(--opacity-color);
+    }
+    /* *{
+      border : solid 1px; 
+    } */
+    .picture{
+        order : -4;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 105vw;
+        background-image: url(pictures/others/groupe-nb.jpg);
+        background-size: cover;
+    }
+
+  h1{
+    background-color: var(--opacity-color) ;
+    width: 100vw;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 70%;
+    padding: 2px 0 2px 0;
+  }
+
+  .div-float{
+    /* border : solid 1px; */
+    background-color:var(--opacity-color) ;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 3vw;
+    padding-top: 3vw;
+    margin-bottom: 50px;
+  }
+  .mug{
+    /* border : solid 1px; */
+    /* width: 60%; */
+    width: 50vw;
+    position:top;
+    left: 0;
+    top: 0;
+    right: 3vw;
+    margin-right: 20px;
+  }
+  .text-home{
+    width: 66vw;
+    margin: auto;
+    text-align: center;
+    padding: 3vw;
+    display: none;
+  }
+  
+  
+  @media screen and (min-width:800px){
+
+    .welcome {
+        width: 66vw;
+        margin: 100px auto 0 auto;
+        display: flex;
+        justify-content: stretch;
+        flex-wrap: wrap;
+        align-items: stretch;
+        min-height: 300px;
+        max-height: 380px;
+    }
+    .favorite{
+        text-align: left;
+        width: 30%;
+        order : 2;  
+        height: 25vw;
+
+    }
+
+    .favorite p{
+        width: 80% ;
+    }
+    .button{
+      margin-left: 50px;
+      margin-top: 4vw;
+      padding-right: 100px;
+      z-index: 999;
+        width: 250px ;
+        height: 3rem ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-color);
+    }
+    .button p{
+        width: 150%;
+        text-align: center;  
+        margin: auto;
+        font-size: 20px;
+        padding-right : 0;
+    }
+    .coeur{
+        background-image: url(pictures/pictos/coeur.png);
+        background-size: 2vw;
+        /* padding: 3% 3% 3% 3%; */
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 3rem ;
+        height: 3rem ;
+    }
+    .coeur:hover {
+        background-image: url(pictures/pictos/coeur-blanc.png);
+    }
+    .button:hover {
+        background-color: black;
+        color: var(--opacity-color);
+    }
+    .picture{
+        order : 2;
+        display: flex;
+        justify-content: right;
+        width: 70%;
+        height: 25vw;
+        background-image: url(pictures/others/groupe-nb.jpg);
+        background-size: cover;
+    }
+    h1{
+        background-color: var(--opacity-color) ;
+        width: auto;
+        color: white;
+        font-size: 2em;
+        text-align: right;
+        margin-bottom: 42%;
+        margin-top: 10%;
+        padding: 7px;
+    }
+  
+    h1 br {
+      display: none;
+      }
+    .div-float{
+      background-color:none ;
+        position: relative;
+        margin: 20px;
+        padding-top: 0;
+        margin-bottom: 10px;
+    }
+   
+    .mug{
+        float: left;
+        /* margin: 0 20px 0 20px; */
+        position: absolute;
+        z-index: 1;
+        width: 23vw;
+        left: 28%;
+        top: -250px;
+    }
+
+    .text-home{
+      width: 66vw;
+      margin: auto;
+      text-align: center;
+      padding: 3vw 3vw 2vw 3vw;
+      display: block;
+    }
+  }
+
+  em{
+    font-size: 0.8em;
+  }

@@ -1,0 +1,159 @@
+
+/* SUPP INFOS COMMUNES AU DESSUS */
+
+
+/*mobile navigation style starts here */
+/* test */
+header{
+    background-color: var(--primary-color);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    top:0;
+    width: 100vw;
+    /* 100vw à la place de 100% */
+}
+.logo{
+    margin: 0;
+    padding: 10px;
+    padding-left: 5rem;
+}
+.half-logo{
+    color: black;
+}
+.nav-toggle{
+    display: none;
+}
+.nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-toggle-label span,
+.nav-toggle-label::before,
+.nav-toggle-label::after{
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+
+}
+.nav-toggle-label::before,
+.nav-toggle-label::after{
+    content: '';
+    position: absolute;
+}
+.nav-toggle-label::before{
+    bottom: 30px;
+}
+.nav-toggle-label::after{
+    top: 30px
+}
+nav{
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--primary-color);
+    width: 100%;
+    display: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: black;
+}
+.nav-toggle:checked ~ nav {
+    display :block;
+}
+.cart{
+    float: right;
+    padding-top: 25px;
+    padding-right: 25px;
+}
+
+
+
+/*mobile navigation style stops here */
+
+/*media query for navigation on desktop screen starts here */
+
+@media screen and (min-width:800px){
+    .nav-toggle-label {
+        display: none;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+    .logo{
+        grid-column: 2 / 3;
+        padding-left: 0;
+        }
+    nav {
+        all: unset;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+    nav li {
+        margin-left: 4em;
+        margin-bottom: 0;
+        font-size: 1.4rem;
+    }
+    nav a::before{
+        content: '';
+        display: block;
+        height: 5px;
+        background: black;
+        position: absolute;
+        bottom: -.75em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+    }
+    nav a:hover::before{
+        transform: scale(1, 1);
+    }
+    .cart{
+        margin-left: -110px;
+    }
+    /* .img-logo{
+        margin-left: -100px;
+    } */
+}
+
+/*media query for navigation on desktop screen ends here */
