@@ -2,13 +2,15 @@
 <html lang="fr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wild Shop</title>
+    <title>A propos de ce site</title>
     <meta name="description" content="description"/>
     <meta name="author" content="author" />
     <meta name="keywords" content="keywords" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="header.css" type="text/css" />
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="footer.css" type="text/css" />
+    <link rel="stylesheet" href="apropos.css" type="text/css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,31 +26,61 @@
     <meta property="og:url" content="https://www.wildshop.com" /> 
   </head>
   <body>
-      <header>
-          <img class="logo" src="pictures/pictos/logo-150px.png" alt="logo wild shop"/>
-          <input type="checkbox" id="nav-toggle" class="nav-toggle"/>  
-          <nav>
-                  <ul class="navigation">
-                      <li><a href="/">Home</a></li>
-                      <li><a href="index.html#produits">Produits</a></li>
-                      <li><a href="#">A propos</a></li>
-              </ul>
-            </nav>
-          <label for="nav-toggle" class="nav-toggle-label">
-            <span></span>
-          </label>
-          <img class="cart" src="pictures/pictos/card-50px.png" alt="icone panier"/>
-      </header>
+    <header>
+      <a href="index.html" class="logo" alt="Retour accueil"><img class="img-logo" src="pictures/pictos/logo-150px.png" alt="logo wild shop"/></a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle"/>  
+        <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#produits">Produits</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+            </ul>
+          </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+        <img class="cart" src="pictures/pictos/card-50px.png" alt="icone panier"/>
+    </header>
+   
+    <main>
+      <div class='video__wrapper'>
+          <iframe allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='' frameborder='0' height='' src='https://www.youtube-nocookie.com/embed/d_owMehNgxY?autoplay=1' width='100%'></iframe>
+          </div>
+
+     
+      <div class="p1">
+          <h2 class='underline left'>Notre Histoire</h2>
+              <p>
+              Lors d’un hackathon pour imaginer l’éducation de demain, nos deux fondateurs Anna Stépanoff et Romain Coeur décident de s’attaquer à la formation des développeurs web, un métier déjà en pénurie à cette époque en France. C’est ainsi que le premier campus Wild Code School voit le jour à La Loupe (région Centre) en 2013 et accueille les premiers Wilders.</p>
+      </div>
+     
     
-      <main>
-
+     
+      <div class="p2">
+          <h2 class='underline left'>  Notre École </h2>
+          <p>La Wild Code School est une école européenne qui propose des programmes de formation tout au long de la vie aux métiers Tech à travers une vingtaine de campus, à distance ou au sein d’entreprises.</p>
+          
+          <p>Notre pédagogie hybride, basée sur la pratique et la réalisation de projets, associe notre plateforme éducative à un réseau de plus de 50 formateurs dédiés.</p>
+          
+          <p>Nous sommes convaincus qu’apprendre est en passe de devenir la principale occupation humaine. Nous soutenons cette vision en proposant à nos élèves un environnement d'apprentissage accueillant et bienveillant.</p>
+          
+          <p>Notre communauté internationale de plus de 5 000 élèves et alumni se rassemble autour des trois valeurs qui nous sont chères : passion, innovation et humanité.
+          </p>
+      </div>
+      <section class="pitch">
+        <h1>A propos de ce site</h1>
+        <p>Ce site a été créé par Aline Gonce, Romain Le Floch, Faycel Nasmi, Valentin Navarro et Martine Perchicot</p>
         
+        <p>Ce site est une refonte de la boutique en ligne de la Wild Code School créée durant le projet P1 de la promo Dev 0322.</p>
+        <p>La boutique en ligne de la Wild Code School propose à la vente des articles portant les couleurs de l'école. Il est destiné aux élèves et anciens élèves souhaitant conserver un souvenir de leur passage à l'école.</p>
+        <p>Les produits disponibles sont des sweats, T-shirts, mugs et tote bags</p>
+        <p>Ce site utilise HTML, CSS et Javascript</p>
+
+      </section>
 
 
 
-
-
-      </main>
+    </main>
       <footer>
         <section class="information">
           <section class="picto">
@@ -73,16 +105,16 @@
           <p class="mail p-footer"><a href="mailto:sav@wiltee.com">sav@wiltee.com</a></p>
         </section>
         <section class="mentions">
-          <p class="p-footer">CGV, Mentions légales</p>
+          <p class="p-footer">Informations légales</p>
           <p class="p-footer">
-            <a href="https://wiltee.com/cgu"
+            <a href="cgu.html"
               >Conditions générales d'utilisation</a>
           </p>
           <p class="p-footer">
-            <a href="https://wiltee.com/cgv">Conditions générales de vente</a>
+            <a href="cgv.html">Conditions générales de vente</a>
           </p>
           <p class="p-footer">
-            <a href="https://wiltee.com/mentions-legales">Mentions légales</a>
+            <a href="mentionslegales.html">Mentions légales</a>
           </p>
           
         </section>
@@ -95,5 +127,6 @@
           <a href="https://www.youtube.com/c/WildCodeSchool4ever/featured"><i class="fa fa-youtube"></i></a>
         </div>
       </footer>
+
     </body>
 </html>
