@@ -1,12 +1,26 @@
-.pitch{
-    width: 66vw;
-    margin: auto;
-    margin-top: 200px;
+main{
+    padding-top: 35%;
+    width: 88%;
+    margin: auto; 
 }
 
-@media screen and (max-width: 800px){
-    .pitch{
-        width:80vw;
-    }
-    
+.video__wrapper{
+    display: flex;
+    margin: center;
+    height: 201px;
+  
+   
+}
+
+@media screen and (min-width: 800px){
+
+main{
+    padding-top: 10%;
+    width: 66%;
+}
+.video__wrapper{
+    display: flex;
+    width: 70%;
+    height: 400px;
+}
 }
